@@ -1,0 +1,43 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  cursor: grab;
+
+  &--dragging {
+    opacity: 0.3;
+    cursor: grabbing;
+  }
+
+  &--drag-enter {
+    transform: translateX(-10px);
+  }
+
+  &--active {
+    border-color: #638e07;
+    transform: scale(1.01);
+    box-shadow: 0 1px 3px #638e07;
+  }
+
+  &__icon {
+    font-size: 18px;
+    color: #638e07;
+  }
+}
+
+.item__name {
+  margin: 0;
+}
+
+.item__button {
+  border: 0;
+  padding: 10px 20px;
+  background-color: #ffffff;
+
+  &:hover {
+    outline: 1px solid #638e07;
+  }
+}

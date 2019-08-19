@@ -1,0 +1,10 @@
+.user-panel {
+  display: flex;
+  padding-top: 25px;
+}
+
+@media (max-width: 520px) {
+  .user-panel {
+    flex-direction: column;
+  }
+}
